@@ -1,0 +1,46 @@
+html { 
+  background: url(images/fonmetalic.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#main {
+  max-width: 1024px;
+  margin: 0 auto; 
+  background: #dae6f1;
+  position: relative;
+  overflow: auto;
+}
+.navbar {
+  float: right;
+  margin-top: 16px;
+  margin-right: 8%;
+}
+.label {
+  float: left;
+  margin-left: 8%
+}
+.navitem {
+  margin-right: 10px;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.clearfix {
+   overflow: auto;
+  }
+.half {
+  width: 50%;
+  height: 100%;
+  float: left;
+  margin: 25px auto;
+  text-align: center;
+  font-size: 35px;
+}
+p {
+  vertical-align: middle
+}
+
+ 

@@ -3,41 +3,46 @@
     <head>
         <meta charset="utf-8">
         <title>Bohdan Vitrovyi</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <header>
-            <h3>Bohdan Vitrovyi</h3>
-            <nav>
-                <a href="">About</a>
-                <a href="">Hobbies</a>
-                <a href="">Contact me</a>
+        <header id="main">
+            <p class="label">Bohdan Vitrovyi</p>
+            <nav class="navbar">
+                <a class="navitem" href="">About</a>
+                <a class="navitem" href="">Hobbies</a>
+                <a class="navitem" href="">Contact me</a>
             </nav>
         </header>
-        <section>
-            <h2>Hi everybody!</h2>
-        </section>
-        <figure>
-            <img src="bohdancostume.jpg" alt="Man with glasses and costume">
-        </figure>
-        <section>
-            <h3>My hobbies</h3>
-            <figure>
-                <img src="teamexim.jpg" alt="Football team" width="358" height="228">
-            </figure>
-        </section>
-        <section>
-            <h3>Send me message</h3>
-            <form action="https://formspree.io/bogwind@gmail.com" method="POST">
-                <fieldset>
-                    <label for="email">Your email:</label>
-                    <input type="email" name="email" id="email" placeholder="example@domain.com" required>
-                    <br>
-                    <label>Your message</label>
-                    <textarea name="message"></textarea>
-                    <br>
-                    <input type="submit" name="send" value="Send">
-                </fieldset>
-            </form>
+        <section class="container">
+            <article class="clearfix">
+                <div class="half">
+                    <p>Hi everybody! My name is Bohdan Vitrovyi and I like programming.</p>
+                </div>
+                <div class="half">
+                    <img src="images/bohdancostume.jpg" alt="Man with glasses and costume">
+                </div>
+            </article>
+            <section>
+                <h3>My hobbies</h3>
+                <figure>
+                    <img src="images/teamexim.jpg" alt="Football team" width="358" height="228">
+                </figure>
+            </section>
+            <section>
+                <h3>Send me message</h3>
+                <form action="https://formspree.io/bogwind@gmail.com" method="POST">
+                    <fieldset>
+                        <label for="email">Your email:</label>
+                        <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+                        <br>
+                        <label>Your message</label>
+                        <textarea name="message"></textarea>
+                        <br>
+                        <input type="submit" name="send" value="Send">
+                    </fieldset>
+                </form>
+            </section>
         </section>
         <footer></footer>
     </body>
