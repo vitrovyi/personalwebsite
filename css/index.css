@@ -1,14 +1,15 @@
 html { 
-  background: url(images/fonmetalic.jpg) no-repeat center center fixed; 
+  background: url(../images/fonmetalic.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 #main {
   max-width: 1024px;
   margin: 0 auto; 
-  background: #dae6f1;
+  background: #5d6b6f;
   position: relative;
   overflow: auto;
 }
@@ -23,6 +24,9 @@ html {
 }
 .navitem {
   margin-right: 10px;
+  text-decoration: none;
+
+  
 }
 .container {
   max-width: 1024px;
@@ -39,8 +43,22 @@ html {
   text-align: center;
   font-size: 35px;
 }
+h1 {
+  text-align: center;
+  font-size: 38px;
+}
 p {
   vertical-align: middle
 }
 
- 
+footer {
+  background: #5d6b6f;
+}
+
+a { -webkit-transition: color .4s; transition: color .4s; color: #070e13; }
+
+a:hover { color: #7FDBFF; }
+
+a:active { -webkit-transition: color .3s; transition: color .3s; color: #007BE6; }
+
+

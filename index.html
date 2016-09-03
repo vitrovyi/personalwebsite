@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Bohdan Vitrovyi</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+        <link rel="stylesheet" type="text/css" href="css/form.css">
     </head>
     <body>
         <header id="main">
             <p class="label">Bohdan Vitrovyi</p>
             <nav class="navbar">
                 <a class="navitem" href="">About</a>
-                <a class="navitem" href="">Hobbies</a>
+                <a class="navitem" href="#hob">Hobbies</a>
                 <a class="navitem" href="">Contact me</a>
             </nav>
         </header>
@@ -23,27 +25,51 @@
                     <img src="images/bohdancostume.jpg" alt="Man with glasses and costume">
                 </div>
             </article>
+            <div class="wrapper">
+                    <h1 id="hob">My hobbies</h1>
+                    <div class="jcarousel-wrapper">
+                        <div class="jcarousel">
+                            <ul>
+                                <li><img src="../images/kizzupnatalia.jpg" width="600" height="400" alt=""></li>
+                                <li><img src="images/teamexim.jpg" alt="Football team" width="600" height="400"></li>
+                                <li><img src="../images/chemp1.jpg" width="600" height="400" alt=""></li>
+                                <li><img src="../images/snowbord.jpg" width="600" height="400" alt=""></li>
+                                <li><img src="../images/vovchuhyteam.jpg" width="600" height="400" alt=""></li>
+                                <li><img src="../images/aniaradikal.jpg" width="600" height="400" alt=""></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                        <p class="jcarousel-pagination"</p>
+                    </div>
+            </div>
             <section>
-                <h3>My hobbies</h3>
-                <figure>
-                    <img src="images/teamexim.jpg" alt="Football team" width="358" height="228">
-                </figure>
-            </section>
-            <section>
-                <h3>Send me message</h3>
+                <h1>Contact me</h1>
                 <form action="https://formspree.io/bogwind@gmail.com" method="POST">
-                    <fieldset>
-                        <label for="email">Your email:</label>
-                        <input type="email" name="email" id="email" placeholder="example@domain.com" required>
-                        <br>
-                        <label>Your message</label>
-                        <textarea name="message"></textarea>
-                        <br>
-                        <input type="submit" name="send" value="Send">
-                    </fieldset>
+                    <ul class="form-style-1">
+                        <li><label>Full Name <span class="required">*</span></label>
+                            <input type="text" name="field1" class="field-divided" placeholder="First" />&nbsp;
+                            <input type="text" name="field2" class="field-divided" placeholder="Last"/>
+                        </li>
+                        <li>
+                            <label>Email <span class="required">*</span></label>
+                            <input type="email" name="field3" class="field-long" placeholder="example@domain.com"/>
+                        </li>
+                        <li>
+                            <label>Your Message <span class="required">*</span></label>
+                            <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="Submit" />
+                        </li>
+                    </ul>
                 </form>
             </section>
         </section>
-        <footer></footer>
+        <footer>
+        </footer>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jcarousel.basic.js"></script>
     </body>
 </html>
