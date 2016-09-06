@@ -42,6 +42,33 @@ html {
   font-size: 35px;
 }
 
+.half h2 {
+  vertical-align: middle;
+}
+
+#about {
+  width: 100%;
+  padding: 20px 0;
+}
+
+#about h3 {
+  text-align: center; /*пытаемся выровнять содержимое по центру */
+  margin: 10px auto;
+  display:block;
+}
+
+article p, div p, article li {
+  width: 80%;
+  margin: 10px auto;
+  font-size: 21px;
+  text-indent: 20px;
+}
+
+article ul {
+  width: 80%;
+  margin: 10px auto;
+}
+
 h1, h2 {
   text-align: center;
   font-size: 38px;
@@ -58,6 +85,6 @@ a { -webkit-transition: color .4s; transition: color .4s; color: #070e13; }
 
 a:hover { color: #7FDBFF; }
 
-a:active { -webkit-transition: color .3s; transition: color .3s; color: #007BE6; }
+a:active { -webkit-transition: color .3s; transition: color .3s; color: #007BE6; }*/
 
 
