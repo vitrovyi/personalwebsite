@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 html { 
   background: url(../images/fonmetalic.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -46,6 +49,18 @@ html {
   vertical-align: middle;
 }
 
+.half img {
+  opacity: 0.7;
+  transition: opacity 2s, margin-left 2s;
+  border-radius: 40px;
+}
+
+
+.half img:hover {
+  opacity: 1;
+  margin-left: 25px;
+} 
+
 #about {
   width: 100%;
   padding: 20px 0;
@@ -81,10 +96,44 @@ footer {
   background: #5d6b6f;
 }
 
+section h4 {
+  text-align: center;
+}
+
 a { -webkit-transition: color .4s; transition: color .4s; color: #070e13; }
 
 a:hover { color: #7FDBFF; }
 
 a:active { -webkit-transition: color .3s; transition: color .3s; color: #007BE6; }*/
 
+button {
+  width: 250px;
+  height: 26px;
+  font-weight: 700;
+  color: yellow;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+button:hover { background: rgb(53, 167, 110); }
+button:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
 
+footer {
+    height: 95px;
+    background: #82989e;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+}
+
+footer img {
+  margin-top: 5px;
+  margin-right: 30px;
+}
